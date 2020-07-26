@@ -1,0 +1,10 @@
+{
+  "env": {
+    "NODE_ENV": "development"
+  },
+  "exec": "babel-node . --extensions \".ts,.tsx\"",
+  "ext": "json,ts,tsx",
+  "watch": [
+    "./api"
+  ]
+}

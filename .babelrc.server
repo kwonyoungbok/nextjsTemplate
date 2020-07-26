@@ -1,0 +1,49 @@
+{
+  "ignore": [
+    ".idea",
+    ".next",
+    ".vscode",
+    "node_modules",
+    "out",
+    "dist",
+    "pages",
+    "components",
+    "public",
+    "stores",
+    "controllers",
+    "scripts"
+  ],
+  "presets": [
+    "next/babel"
+  ],
+  "plugins": [
+    [
+      "module-resolver",
+      {
+        "root": [
+          "."
+        ],
+        "extensions": [
+          ".js",
+          ".jsx",
+          ".ts",
+          ".tsx",
+          ".css"
+        ],
+        "cwd": "babelrc"
+      }
+    ],
+    [
+      "@babel/plugin-proposal-decorators",
+      {
+        "legacy": true
+      }
+    ],
+    [
+      "@babel/plugin-proposal-class-properties",
+      {
+        "loose": true
+      }
+    ]
+  ]
+}
